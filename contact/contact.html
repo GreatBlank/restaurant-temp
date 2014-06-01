@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Get in Touch</title>
+	<meta charset="utf-8">
+	<!-- Main StyleSheet -->
+	<link rel="stylesheet" type="text/css" href="../Styles/mainframe.css"/>
+	<!-- Page Specific StyleSheet -->
+	<link rel="stylesheet" type="text/css" href="contact.css"/>
+	<!-- MODIFY DESCRIPTION FOR EACH PAGE -->
+	<meta name="description" content="Located on 30A, Wild Olives is a bistro and market, offering retail fine wine and a great place for gathering">
+	<!-- Point to Font CSS -->
+	
+	
+	<script> 
+		$( document ).ready( function() {
+		//Google Maps JS
+		//Set Map
+		function initialize() {
+				var myLatlng = new google.maps.LatLng(53.3333,-3.08333);
+				var imagePath = 'http://www.jamesnew.co.uk/googlePin.png'
+				var mapOptions = {
+					zoom: 11,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+
+				var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+				//Callout Content
+				var contentString = '104 N Barrett Square, Panama City Beach, FL 32461';
+				//Set window width + content
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString,
+					maxWidth: 500
+				});
+		
+				//Add Marker
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					icon: imagePath,
+					title: 'image title'
+				});
+		
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map,marker);
+				});
+		
+				//Resize Function
+				google.maps.event.addDomListener(window, "resize", function() {
+					var center = map.getCenter();
+					google.maps.event.trigger(map, "resize");
+					map.setCenter(center);
+				});
+			}
+		
+			google.maps.event.addDomListener(window, 'load', initialize);
+		
+		});
+</script>
+</head>
+
+
+<body>
+	<section class="home">
+		<div class="row">
+			<div class="twelve columns">
+				<div class="navwrap">
+					<nav>
+
+						<ul>
+
+							<li><a href="../index.html" style="margin-left: 0px; text-align: left;">Welcome</a></li>
+							<li><a href="../about/about.html">About us</a></li>
+							<li><a href="../menu/menu.html">Menu</a></li>
+
+							<li id="logo">
+								<div id="logo">
+									<a href="#" style="margin: 0px;">
+											<img alt="Wild Olives" src="../img/mainlogo.png" class="fade-it">
+									</a>
+								</div>
+							</li>
+
+							<li><a href="../wine/wine.html">Wine</a></li>
+							<li><a href="../event/event.html">Events</a></li>
+							<li><a href="contact.html" style="margin-right: 0px;"><span id="selected">Contact</span></a></li>
+
+						</ul>
+					</nav>
+
+
+					<hr class="linebreaking" />
+
+
+						<!-- <div class="fade-it"> -->
+					<div class="titleset"> <!-- class=roles -->
+						<div class="detailset">
+							wine tasting
+						</div>
+
+						<div class="greatinfo">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br>
+							 incididunt ut labore et dolore magna aliqua.
+						</div>
+
+						<a href="#">GET ALL THE DETAILS</a>
+					</div> <!-- navwrap -->
+				</div> <!-- Twelve Column -->
+
+			</div> <!-- row -->
+		</div> <!-- home -->
+
+				<!--
+				<div id="down_button" (to main_button) class="fade-it">
+					<a href="#whatwedo"></a>
+				</div> -->
+		</div>
+	</section>
+	
+<!-----------------------------------------------------------------
+		MAIN CONTENT 
+------------------------------------------------------------------>
+
+	<section class="homecontent">
+			<h5> Contact </h5>
+		<div class="contactpage">
+			<div class="contact-left">
+			<p> 
+				Phone: <a href="tel:0-000-000-0000" data-rel="external">
+								000.000.0000
+							</a>
+<br><br>
+				E-mail:
+				<a href="mailto:smaple@email.com" data-rel="external">
+						wild@olives.com
+						</a><br><br>
+				Reservations: consectetur adipisicing elit, sed doeiusmod tempor
+							 incididunt ut labore et  <br><br><br><br>
+				Our Hours <br> <br>
+					Mondays: CLOSED<br>
+						Our Day to Rest <br>
+						Tuesdays:
+						10:00 AM - 9:00 PM <br>
+						Tuesday - Saturday
+						10:00 AM - 9:00 PM <br>
+						Sunday:
+						10:00 AM - 9:00 PM
+			</p>
+
+		</div>
+		<div class="locationinfo">
+		Wild Olives Market
+		<br> <br>
+		0000 N Barret Square 32444, 
+Panama City Beach
+		</div>
+	</div>
+		
+
+	</section>
+	
+	
+
+
+	<footer>
+		<div class="footwrap">
+
+			<div class="motto">
+				<h5>
+			Mission statement. Lorem <span class="bigred">IPSUM</span> do sit amet,
+consectetur ut labore et de magna aliqua.
+				</h5>
+				<div class="social">
+
+					<a href="#">
+						<div class="fb">
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="twitter">
+						</div>
+					</a>
+
+				</div> <!-- END social -->
+			</div> <!-- END motto -->
+
+
+
+			<div class="evenfoot">
+
+				<h3>Visit Us!</h3>
+
+				<div class="text1">
+					<h6> Wild Olives Market </h6>
+					<br/>
+
+					<p class="address">
+					0000 N Barret Square 32444, <br>
+					Panama City Beach
+					</p>
+
+					<p class="titlecontact"> Phone
+						<p class="contact" style="margin-top: 0px;">
+							<a href="tel:0-000-000-0000" data-rel="external">
+								000.000.0000
+							</a>
+						</p>
+					</p>
+
+					<p class="titlecontact"> E-mail </p>
+					<p class="contact" style="margin-top: 0px;">
+						<a href="mailto:smaple@email.com" data-rel="external">
+						wild@olives.com
+						</a>
+					</p>
+
+				</div> <!-- END text1 -->
+			</div> <!-- END 1st evenfoot -->
+
+
+			<div class="evenfoot" style="float: right; margin: 0;">
+				<h3>Serving Hours</h3>
+				<ul>
+					<li>
+						<h6>
+						Mondays
+						</h6>
+						<p class="dayhour">
+						CLOSED
+						<br>
+						Our Day to Rest
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Tuesdays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Wednesdays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Thursdays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Fridays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Saturdays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+					<li>
+						<h6>
+						Sundays
+						</h6>
+						<p class="dayhour">
+						10:00 AM
+						<br>
+						9:00 PM
+						</p>
+						<hr class="footline">
+					</li>
+
+		</div>
+
+	</footer>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../Fonts/FuturaLT-Light.eot');
+    src: url('../Fonts/FuturaLT-Light.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Light.woff') format('woff'),
+         url('../Fonts/FuturaLT-Light.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Light.svg#FuturaLT-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('../Fonts/FuturaLT-Book.eot');
+    src: url('../Fonts/FuturaLT-Book.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Book.woff') format('woff'),
+         url('../Fonts/FuturaLT-Book.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Book.svg#FuturaLT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book-Oblique';
+    src: url('../Fonts/FuturaLT-BookOblique.eot');
+    src: url('../Fonts/FuturaLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-BookOblique.woff') format('woff'),
+         url('../Fonts/FuturaLT-BookOblique.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-BookOblique.svg#FuturaLT-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/****************************** Whole Page Setup *******************************/
+
+
+
+#map-canvas{
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+}
+
+
+.home {
+	background: url('../img/winerow.jpg') no-repeat center top fixed;
+}
+
+.homecontent {
+	width: 100%;
+	height:500px;
+	margin: 0 auto;
+}
+
+.contactpage {
+	width: 100%;
+}
+
+.contact-left {
+	width: 600px;
+	height: 344px;
+	display: inline-block;
+}
+.homecontent h5 { 
+	text-align: left;
+	margin: 72px 0 24px 0;
+	text-transform: uppercase;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 42px;
+	letter-spacing: 0.06em;
+	line-height: 28px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #6b0015;
+		text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+.contact-left p {
+	height: 260px;
+	width: 600px;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-top: 24px;
+	text-align: left;
+	letter-spacing: 0.03em;
+	line-height: 190%;
+	column-width: 208px;
+	-webkit-column-width: 208px;
+	-moz-column-width: 208px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-webkit-column-gap: 40px;
+	-moz-column-count: 2; /* Firefox */
+		-moz-column-gap: 40px;
+	column-count: 2;
+		column-gap: 40px;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49); 
+	margin-right: 40px;
+}
+
+.contact-left a {
+	height: 180px;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	color: #4a4a4a;
+	text-align: left;
+	letter-spacing: 0.03em;
+	line-height: 180%;
+	text-decoration: underline;
+
+}
+
+.locationinfo {
+	display: inline-block;
+	width: 20%;
+	float: right;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	color: #4a4a4a;
+	margin-top: 24px;
+	text-align: left;
+	letter-spacing: 0.03em;
+	line-height: 190%;
+	float: right;
+}
