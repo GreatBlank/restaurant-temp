@@ -1,0 +1,491 @@
+/****************************** Pre-Loaded Futura *******************************/
+
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../Fonts/FuturaLT-Light.eot');
+    src: url('../Fonts/FuturaLT-Light.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Light.woff') format('woff'),
+         url('../Fonts/FuturaLT-Light.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Light.svg#FuturaLT-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('../Fonts/FuturaLT-Book.eot');
+    src: url('../Fonts/FuturaLT-Book.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Book.woff') format('woff'),
+         url('../Fonts/FuturaLT-Book.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Book.svg#FuturaLT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book-Oblique';
+    src: url('../Fonts/FuturaLT-BookOblique.eot');
+    src: url('../Fonts/FuturaLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-BookOblique.woff') format('woff'),
+         url('../Fonts/FuturaLT-BookOblique.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-BookOblique.svg#FuturaLT-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.home {
+	background: url('../img/wineroom.jpg') no-repeat center top fixed;
+}
+
+.homecontent {
+	margin-top: 72px;
+	height: 1360px;
+}
+
+.detailedwine {
+	height: 450px;
+	margin-bottom: 40px;
+}
+
+.wineinfo {
+	width: 550px;
+}
+.wineinfo h5 { 
+	text-align: left;
+	margin: 72px 0 24px 0;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 42px;
+	line-height: 32px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #6b0015;
+		text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+.wineinfo p {
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	color: #4a4a4a;
+	text-align: left;
+	letter-spacing: 0.03em;
+	line-height: 140%;
+	column-width: 100px;
+	-webkit-column-width: 248px;
+	-moz-column-width: 248px;
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-webkit-column-gap: 40px;
+	-moz-column-count: 2; /* Firefox */
+		-moz-column-gap: 40px;
+	column-count: 2;
+		column-gap: 40px;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49); 
+}
+
+.mainbucket {
+	width: 100%;
+	display: block;
+	margin: 72px 0 72px 0;
+}
+
+.foodfirst {
+	display: inline;
+	width: 210px;
+	height: 450px;
+	float: right;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+/****************************** Photo Stacks *******************************/
+.bottle { 
+	height: 450px;
+	width: 125px;
+	display: block;
+}
+
+.zero {
+	z-index: 1;
+	position: absolute;
+	width: 175px;
+	top: 250px;
+	left: 60px;
+}
+
+.zero img { 
+	left: 180px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+.two {
+	z-index: 3;
+	position: absolute;
+}
+
+.two img { 
+	left: 180px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+
+
+.wrapWine {
+	margin: 72px 0;
+	width: 100%;
+	height: 600px;
+	margin: 0;
+	text-align: left;
+}
+.sidebar {
+	height: 100%;
+}
+
+
+.block {
+	min-width: 250px;
+	height: 100%;
+	
+}
+
+.wineNav {
+	margin: 0;
+	padding: 0;
+}
+.sidebar-header {
+	padding: 0px;
+	color: #4a4a4a;
+}
+
+.sidebar-header h1 {
+	font-size: 30px;
+	font-family: "Futura-Light", sans-serif;
+	letter-spacing: 0.06em;
+	color: #4a4a4a;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+.sidebar-nav {
+   overflow:hidden;
+   position: relative;
+   float: none;
+   list-style: none;
+   width: 100%;
+   text-align: left;
+   height: 100%;
+}
+
+.sidebar-nav input[type="radio"] {
+	position: absolute;
+	left: -9999px;
+}
+
+.sidebar-nav label {
+	display: block;
+	padding: 2px;
+	font-size: 14px;
+	position: relative;
+	background: transparent;
+	width: 130px;
+	margin-bottom: 4px;
+	font-family: "Futura-book", sans-serif;
+	color: #717171;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+
+.sidebar-nav li {
+			padding: 0px;
+			display: block;
+		}
+
+.tab-inside {
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 20px;  
+    position: absolute;
+    top: 0px;
+    left: 220px;
+}
+
+.sidebar-nav [id^="tab"]:checked + label { 
+	font-family: "Futura-book", sans-serif;
+	width: 130px;
+	padding: 2px;
+	color: #4a4a4a;
+	border-bottom: 1px solid #4a4a4a;
+}
+			
+.sidebar-nav [id^="tab"]:checked ~ [id^="tab-inside"] {
+    display: block;
+}
+
+
+
+  
+
+.wineglasses {
+	background: #f0f0f0;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	height: 560px;
+	width: 560px;
+	padding: 20px;
+	
+}
+
+.wineglasses:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+.wineglasses h1 {
+	font-size: 24px;
+	font-family: "Futura-Light", sans-serif;
+	letter-spacing: 0.06em;
+	color: #4a4a4a;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+.wineglasses h3 {
+	color: #4a4a4a;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.06em;
+}
+
+.winelist {
+	margin-bottom: 40px;
+}
+
+.winelist li {
+	color: #717171;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.03em;
+	line-height: 14px;
+}
+
+.itemName {
+	color: #4a4a4a;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 16px;
+	text-transform: capitalize;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.03em;
+}
+
+.winelist li p{
+	color: #4a4a4a;
+	font-family: "Futura-Book-Oblique", sans-serif;
+	font-size: 12px;
+	text-transform: lowercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.03em;
+}
+
+.redbottles {
+	background: #f0f0f0;
+	position: relative;
+	overflow: hidden;
+	display: block;
+	height: 560px;
+	width: 560px;
+	padding: 20px;
+}
+
+.redbottles:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+.redbottles h1 {
+	font-size: 24px;
+	font-family: "Futura-Light", sans-serif;
+	letter-spacing: 0.06em;
+	color: #4a4a4a;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+}
+
+.redbottles h3 {
+	color: #4a4a4a;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.06em;
+}
+
+ul.winelist {
+}
+
+.redbottles li {
+	color: #717171;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 14px;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.03em;
+	margin: 10px 0 15px 10px;
+}
+
+.redbottles li p{
+	color: #717171;
+	font-family: "Futura-Book-Oblique", sans-serif;
+	font-size: 12px;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.49);
+	letter-spacing: 0.03em;
+	margin: 10px 0 15px 10px;
+}
+
+/*======================================
+5.		480PX AND UP
+======================================*/
+
+@media (min-width: 480px) {
+  .product-grid li {
+    float: left;
+    width: 50%;
+  }
+}
+
+.foodback { 
+	display: block;
+	z-index: 1;
+	height: 255px; 
+	width: 405px;
+	position: relative;
+}
+
+
+
+.foodmed {
+	display: inline;
+}
+
+.foodlmed img {
+	display: inline;
+}
+
+
+
+
+
+
+
+
+.boxcontain:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+.boxfood .twelve.columns {
+	width: 100%;
+}
+
+.boxcontain {
+	display: block;
+	position: relative;
+	margin-bottom: 48px;
+	min-width: 480px;
+	text-align: justify;
+	white-space: normal;
+	font-size: 0;
+}
+
+
+.boxcontain div {
+	background: #fcfcfc;
+	width: 240px;
+	height: 177px;
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+	font-weight: 100;
+	text-align: center;
+	border: #fff 4px solid;
+	-webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+	box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+}
+
+.boxcontain div img {
+	background-attachment: cover;
+	background-size: cover;
+}
+
+
+.boxcontain p { 
+}
+
+.boxcontain h4 {
+	color: #000;
+}
+
+.clickbox {
+	display: inline-block;
+	background: #777;
+	height: 177px;
+	width: 240px;
+
+}
+
+.itemtext { 
+	color: #e3e3e3;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 12px; 
+	line-height: 16;
+	text-align: left; 
+}
+
+.boxcontain div h1 { 
+	margin: 15px 0 5px 0;
+	color: #bc9847;
+	padding-left: 5px;
+	font-family: "Futura-Book", sans-serif;
+	font-size: 20px; 
+}
+
+.boxcontain div a { 
+	color: #2a3411;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 24px; 
+	text-shadow: -1px 0px 0px rgba(250, 250, 250, 0.49);
+}
+
+.boxcontain div p { 
+	height: 50px;
+	margin-bottom: 5px;
+	color: #777;
+	padding-left: 0px;
+	letter-spacing: 1px;
+	font-family: "Futura-Light", sans-serif;
+	line-height: 16px;
+	font-size: 16px; 
+	text-shadow: -1px 0px 0px rgba(250, 250, 250, 0.49);
+}
+
+
+
+
+
+
