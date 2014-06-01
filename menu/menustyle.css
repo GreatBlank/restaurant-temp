@@ -1,0 +1,322 @@
+@font-face {
+    font-family: 'Futura-Light';
+    src: url('../Fonts/FuturaLT-Light.eot');
+    src: url('../Fonts/FuturaLT-Light.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Light.woff') format('woff'),
+         url('../Fonts/FuturaLT-Light.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Light.svg#FuturaLT-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book';
+    src: url('../Fonts/FuturaLT-Book.eot');
+    src: url('../Fonts/FuturaLT-Book.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-Book.woff') format('woff'),
+         url('../Fonts/FuturaLT-Book.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-Book.svg#FuturaLT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura-Book-Oblique';
+    src: url('../Fonts/FuturaLT-BookOblique.eot');
+    src: url('../Fonts/FuturaLT-BookOblique.eot?#iefix') format('embedded-opentype'),
+         url('../Fonts/FuturaLT-BookOblique.woff') format('woff'),
+         url('../Fonts/FuturaLT-BookOblique.ttf') format('truetype'),
+         url('../Fonts/FuturaLT-BookOblique.svg#FuturaLT-BookOblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+html, body {
+	height: 512px;
+}
+.home {
+	background: url('../img/tunabig.jpg') no-repeat  fixed;
+}
+
+
+/****************************** Variable Content Tabs *******************************/
+
+* {
+  margin: 0;
+  padding: 0; 
+  @include box-sizing(border-box);
+} *
+
+.tabDisplay {
+	width: 100%;
+	height: 600px;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: left;
+}
+
+.tabular { 
+	width: 100%;
+	height: 28px;
+	float: none;
+	list-style: none;
+	position: relative;
+	margin-top: 80px;
+	text-align: left;
+
+}
+
+.tabline {
+	height: 1px;
+	width: 100%;
+	background: #6b0015;
+	border: none;
+	margin-top: 24px;
+}
+
+.tabular li {
+			float: left;
+			display: block;
+			margin-right: 100px;
+			margin-left: 40px;
+			padding: 0px;
+		}
+
+.tabular input[type="radio"] {
+			position: absolute;
+			left: -9999px;
+		}
+
+		.tabular label {
+			display: block;
+			padding: 4px 10px;
+			font-size: 18px;
+			position: relative;
+			background: transparent;
+			width: 130px;
+}
+
+
+.tab-inside {
+    z-index: 2;
+    display: none; 
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;  
+    position: absolute;
+    top: 28px;
+    left: 0;
+    margin-top: 40px; 
+		}
+
+.tab-inside p {
+	font-size: 18px;
+		}
+		
+.tabular [id^="tab"]:checked + label { 
+			background: #6b0015; 
+			width: 130px;
+			padding: 4px 10px;
+			color: #fff;
+}
+			
+.tabular [id^="tab"]:checked ~ [id^="tab-inside"] {
+    display: block; }
+
+
+
+
+
+.box-contain:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+
+.box {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 48px;
+	width: 240px;
+	overflow: hidden;
+	text-align: justify;
+	white-space: normal;
+	font-size: 0;
+	background: #ffdfb2;
+	border: 4px;
+	-webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+	box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.28);
+
+}
+
+.box .boxmask, .box .content {
+	width: 240px;
+	height: 177px;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+
+.box img {
+	display: block;
+	position: relative;
+	margin: 0;
+}
+
+.box h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.box p {
+    font-family: "Futura-Book-Oblique", sans-serif;
+    font-size: 14px;
+    position: relative;
+    color: #2a3411;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.box a.info {
+		width: 45px;
+		text-align: center;
+    display: inline;
+    text-decoration: none;
+    padding: 4px 10px;
+    font-size: 12px;
+    text-transform: capitalize;
+    background: #6b0015;
+    color: #fff;
+    box-shadow: 0 0 1px #000
+}
+.box a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
+
+.box-contain img { 
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+    margin: 0;
+}
+.box-contain .mask { 
+		display: inline-block;
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0.4;
+}   
+.box-contain h1{
+    border-bottom: 1px solid rgba(42, 52, 17, 0.4);
+    text-align: center;
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(0);
+    color: #2a3411;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.box-contain p {
+    color: #2a3411;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.box-contain a.info { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+.box-contain:hover img { 
+    transform: scale(10);
+    opacity: 0;
+}
+.box-contain:hover .mask { 
+    opacity: 1;
+}                                                                            
+.box-contain:hover h1,
+.box-contain:hover p,
+.box-contain:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.boxcontain div {
+	width: 240px;
+	height: 177px;
+	text-align: justify;
+	display: inline-block;
+	margin: 0;
+	font-weight: 100;
+	text-align: center;
+	}
+	
+	.boxcontain {
+	height: 185px;
+	width: 100%;
+	position: relative;
+	text-align: justify;
+	white-space: normal;
+	font-size: 0;
+	display: block;
+	margin-bottom: 40px;
+	font-weight: 100;
+	}
+
+.boxcontain:after {
+	content:"";
+	width: 100%;
+	display: inline-block;
+}
+
+
+.boxcontain p { 
+}
+
+.boxcontain h4 {
+	color: #000;
+}
+
+.clickbox {
+	display: inline-block;
+	background: #777;
+	height: 177px;
+	width: 240px;
+
+}
+
+.itemtext { 
+	color: #e3e3e3;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 12px; 
+	line-height: 16;
+	text-align: left; 
+}
+
+.boxcontain div h1 { 
+	margin: 15px 0 3px 0;
+	color: #2a3411;
+	font-family: "Futura-Light", sans-serif;
+	font-size: 22px; 
+}
+
+/****************************** END Variable Content Tabs *******************************/
