@@ -5,9 +5,12 @@
 	<title>Wild Olives Bistro</title>
 	<meta charset="utf-8">
 	<!-- Main StyleSheet -->
-	<link rel="stylesheet" href="homestyle.css"/>
+	<link rel="stylesheet" href="Styles/mainframe.css"/>
 	<!-- Page Specific Styles --> 
-	<link rel="stylesheet" href="css/aboutstyle.css"/>
+	<link rel="stylesheet" href="homestyle.css"/>
+	<!--[if IE]>
+  	<link href="ie.css" rel="stylesheet" type="text/css" />
+  	<![endif]-->
 	<!-- MODIFY DESCRIPTION FOR EACH PAGE -->
 	<meta name="description" content="Located on 30A, Wild Olives is a bistro and market, offering retail fine wine and a great place for gathering">
 	<!-- Point to Font CSS -->
@@ -15,7 +18,7 @@
 
 
 <body>
-	<section id="home">
+	<section class="home">
 		<div class="row">
 			<div class="twelve columns">
 				<div class="navwrap">
@@ -29,10 +32,10 @@
 							<li><a href="menu/menu.html">Menu</a></li>
 
 							<li>
-								<div id="logo"
-									<a href="#">
+								<div id="logo">
+									<a href="#" style="margin: 0px;">
 										<h1 class="fade-it">
-											<img alt="Wild Olives" src="img/mainlogo.png">
+											<img alt="Wild Olives" src="img/logo.png">
 										</h1>
 									</a>
 								</div>
@@ -61,25 +64,25 @@
 						</div>
 
 						<a href="#">GET ALL THE DETAILS</a>
-					</div> <!-- navwrap -->
-				</div> <!-- Twelve Column -->
+					</div> <!-- titleset -->
+				</div> <!-- navwrap -->
 
-			</div> <!-- row -->
-		</div> <!-- home -->
+			</div> <!-- twelve column -->
+		</div> <!-- row -->
+	</section> <!--home / header -->
+																							<!--
+																							<div id="down_button" (to main_button) class="fade-it">
+																								<a href="#whatwedo"></a>
+																							</div> -->
 
-				<!--
-				<div id="down_button" (to main_button) class="fade-it">
-					<a href="#whatwedo"></a>
-				</div> -->
-		</div>
-	</section>
+	
 	
 
 
 	<section class="homecontent">
 		<div class="featuredbucket">
 			<div class="greatfood">
-				<img src="img/largefood.png" />
+				<img src="img/largefood.png" alt="amazingfood" />
 
 				<h3>
 					Pairing for the Gods
@@ -97,53 +100,36 @@
 		<div class="footwrap">
 
 			<div class="motto">
-				<h5>
-			Mission statement. Lorem <span class="bigred">IPSUM</span> do sit amet,
-consectetur ut labore et de magna aliqua.
-				</h5>
+				<h5>Mission statement. Lorem <span class="bigred">IPSUM</span> do sit amet,
+consectetur ut labore et de magna aliqua.</h5>
 				<div class="social">
-
 					<a href="#">
-						<div class="fb">
-						</div>
+						<div class="fb"></div>
 					</a>
-
 					<a href="#">
-						<div class="twitter">
-						</div>
+						<div class="twitter"></div>
 					</a>
-
 				</div> <!-- END social -->
 			</div> <!-- END motto -->
 
 
 
 			<div class="evenfoot">
-
 				<h3>Visit Us!</h3>
-
+				<h6> Wild Olives Market </h6>
 				<div class="text1">
-					<h6> Wild Olives Market </h6>
-					<br/>
 
-					<p class="address">
-					0000 N Barret Square 32444, <br>
-					Panama City Beach
-					</p>
+					<p class="address">0000 N Barret Square 32444, <br> Panama City Beach</p>
 
-					<p class="titlecontact"> Phone
-						<p class="contact" style="margin-top: 0px;">
-							<a href="tel:0-000-000-0000" data-rel="external">
-								000.000.0000
-							</a>
+						<p class="titlecontact"> Phone
+							<p class="contact" style="margin-top: 0px;">
+								<a href="tel:0-000-000-0000" data-rel="external">000.000.0000</a>
+							</p>
 						</p>
-					</p>
 
 					<p class="titlecontact"> E-mail </p>
 					<p class="contact" style="margin-top: 0px;">
-						<a href="mailto:smaple@email.com" data-rel="external">
-						wild@olives.com
-						</a>
+						<a href="mailto:smaple@email.com" data-rel="external">wild@olives.com</a>
 					</p>
 
 				</div> <!-- END text1 -->
@@ -154,87 +140,47 @@ consectetur ut labore et de magna aliqua.
 				<h3>Serving Hours</h3>
 				<ul>
 					<li>
-						<h6>
-						Mondays
-						</h6>
-						<p class="dayhour">
-						CLOSED
-						<br>
-						Our Day to Rest
-						</p>
+						<h5>Mondays</h5>
+						<p class="dayhour">CLOSED<br>Our Day to Rest</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Tuesdays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Tuesdays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Wednesdays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Wednesdays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Thursdays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Thursdays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Fridays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Fridays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Saturdays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Saturdays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
 					<li>
-						<h6>
-						Sundays
-						</h6>
-						<p class="dayhour">
-						10:00 AM
-						<br>
-						9:00 PM
-						</p>
+						<h5>Sundays</h5>
+						<p class="dayhour">10:00 AM<br>9:00 PM</p>
 						<hr class="footline">
 					</li>
-
-		</div>
+				</ul>
+			</div>
+		
+		</div> <!-- footwrap -->
+		
 
 	</footer>
-
 </body>
 
 

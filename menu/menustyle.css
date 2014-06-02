@@ -66,12 +66,13 @@ html, body {
 
 .tabular { 
 	width: 100%;
-	height: 28px;
+	height: 32px;
 	float: none;
 	list-style: none;
 	position: relative;
 	margin-top: 80px;
 	text-align: left;
+	border-bottom: 1px solid #6b0015;
 
 }
 
@@ -89,6 +90,7 @@ html, body {
 			margin-right: 100px;
 			margin-left: 40px;
 			padding: 0px;
+			height: 26px;
 		}
 
 .tabular input[type="radio"] {

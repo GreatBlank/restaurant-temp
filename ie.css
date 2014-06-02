@@ -1,4 +1,18 @@
 
+
+
+
+
+/* IE6 css fixer v0.95: Mon, 02 Jun 2014 02:38:52 +0200 */
+
+
+
+/* =============================================
+			HOMESTYLE CSS 
+ ============================================= */
+ 
+ 
+ 
 @font-face {
     font-family: 'Futura-Light';
     src: url('Fonts/FuturaLT-Light.eot');
@@ -150,6 +164,7 @@ h2 {
 }
 
 nav {
+	/*IE6*/ zoom: 1;
 	z-index: 42;
 	width: 100%;
 	position: relative;
@@ -249,6 +264,7 @@ nav li #logo {
 }
 
 h1 img {
+	/*IE6*/ zoom: 1;
 	position: relative;
 	margin: 5.25% auto 0px auto;
 	z-index: 999;
@@ -262,12 +278,14 @@ h1 img {
 }
 
 .column, .columns {
+	/*IE6*/ zoom: 1;
+	/* IE6 */ display: inline;
 	margin-left: 2%;
 	float: left;
-	min-height: 1px;
+	min-height: 0.1%;
 	position: relative;
 	box-sizing: border-box;
-	-webkit box sizing: border box;
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 }
 
@@ -282,6 +300,7 @@ h1 img {
 	animation fill mode: forwards;
 	-webkit-animation-duration: 3s;
 	-moz-animation-duration: 3s;
+	/*IE6*/filter:progid:DXImageTransform.Microsoft.Alpha(opacity=9000);
 }
 
 img, object, embed {
@@ -297,6 +316,7 @@ img, object, embed {
 .titleset {
 	display: inline-block;
 	vertical-align: middle;
+	/*IE6*/zoom: 1;
 	overflow: hidden;
 	z-index: 999;
 	margin: 115px 0 0 0;
@@ -304,6 +324,7 @@ img, object, embed {
 
 .titleset a {
 	width: 220px;
+	/*IE6*/zoom: 1;
 	overflow: hidden;
 	z-index: 999;
 	margin: auto;
@@ -332,6 +353,7 @@ img, object, embed {
 	padding-bottom: 2px;
 }
 .detailset {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
@@ -358,12 +380,12 @@ h2 {
 }
 
 #main_button a {
-	position: absolute;
+	/*IE6*/position: relative;
+	/*IE6*/zoom: 1;
 	width: 80px;
 	height: 80px;
 	bottom: 5%;
 	left: 50%;
-	margin-left: -40px;
 	background: url('#');/* button */
 	background-position: 0px -80px;
 	-webkit-transition: all 1s ease-in-out;
@@ -400,6 +422,7 @@ a, a:hover {
 }
 
 .detailset {
+	/*IE6*/ zoom: 1;
 	text-transform: uppercase;
 	color: #e4e4e4;
 	text-shadow: 0px 1px 2px rgba(127, 127, 127, 1);
@@ -409,6 +432,7 @@ a, a:hover {
 }
 
 .greatinfo {
+	/*IE6*/ zoom: 1;
 	text-transform: none;
 	font-family: "Futura-Light", sans-serif;
 	color: #e4e4e4;
@@ -457,6 +481,7 @@ a, a:hover {
 }
 
 .greatfood img {
+	/* IE6 */display: inline;
 	repeat: no-repeat;
 	float: right;
 	width: 390px;
@@ -473,7 +498,7 @@ a, a:hover {
 
 .greatfood h3{ 
 	float: left;
-	display: block;
+	display: inline;
 	margin: 0;
 	padding-top: 25px;
 }
@@ -546,6 +571,7 @@ a, a:hover {
 }
 
 .boxcontain {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	margin-top: 96px;
 	margin-bottom: 96px;
@@ -564,6 +590,7 @@ a, a:hover {
 }
 
 .clickbox {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	background: #777;
 	height: 177px;
@@ -601,6 +628,7 @@ footer {
 }
 
 .motto {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	width: 300px;
 	height: 195px;
@@ -609,12 +637,14 @@ footer {
 }
 
 .social {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	width: 220px;
 	height: 32px;
 }
 
 .fb {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	height: 32px;
 	width: 32px;
@@ -623,6 +653,7 @@ footer {
 }
 
 .twitter {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	height: 32px;
 	width: 32px;
@@ -631,6 +662,7 @@ footer {
 }
 
 .evenfoot {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	width: 220px;
 	height: 260px;
@@ -707,6 +739,7 @@ footer {
 
 .titlecontact {
 	font-family: "Futura-Book", sans-serif;
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	font-size: 16px;
 	font-weight: 600;
@@ -716,6 +749,7 @@ footer {
 	text-shadow: 1px 0px 0px rgba(240, 235, 200, 0.5);
 }
 .contact a {
+	/*IE6*/zoom: 1;
 	display: inline-block;
 	font-size: 14px;
 	font-weight: 100;
@@ -744,3 +778,7 @@ footer {
 	border-bottom: 1px solid #fafafa;
 	padding-bottom: 2px;
 }
+
+ 
+ 
+ input, button {overflow:visible;}
